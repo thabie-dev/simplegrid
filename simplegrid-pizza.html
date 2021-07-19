@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simple-grid.css">
+
+<style>
+    Body { 
+    background-color: khaki;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    border: 3px solid darkred;
+  }
+
+.pizza {
+    /* box-model */
+    padding: 1em;
+    border: 5px solid;
+    margin: 1em;
+    border-radius: 1em;
+    width: 12em;
+    display: inline-block;
+    min-height: 30em;
+}
+.small_pizza {
+    background-color: tan;
+    
+   
+}
+
+
+.medium_pizza {
+    background-color: saddlebrown;
+    
+  
+}
+
+
+.large_pizza {
+    background-color: sienna;
+   
+    
+}
+
+.contacts_details {
+    background-color: red;
+    padding: 1em;
+    border: 5px solid;
+    margin: 1em;
+    border-radius: 1em;    
+}
+.center_contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    border: 3px solid darkred;
+  }
+
+@media (min-width:960px){
+   
+body{
+    background-color: cornsilk;
+}
+}
+@media (min-width:560px){
+   
+    body{
+        background-color:darkred
+    }
+    .pizzas {
+        display: flex;
+    }
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-12 center">
+            <!-- This content will take up 3/12 (or 1/4) of the container -->
+                <h1>Perfect Pizza</h1> 
+          </div>
+       
+
+        <div class="row">
+          <div class="col-4 small_pizza pizza">
+            <h2>Small Pizza</h2>
+            <img src="small-pizza.png" width="150">
+            <h3>R129.00</h3>
+            <p>Cheese pepperoni onion bacon</p>
+          </div>
+
+          <div class="col-4 medium_pizza pizza">
+            <h2>Medium Pizza</h2>
+            <img src="small-pizza.png" width="150">
+            <h3>R89.00</h3>
+            <p>Cheese pepperoni onion bacon</p>
+        </div>
+
+        <div class="col-4 large_pizza pizza">
+            <h2>Large Pizza</h2>
+            <img src="small-pizza.png" width="150">
+            <h3>R129.00</h3>
+            <p>Cheese pepperoni onion bacon</p>
+        </div>
+
+        <div class="col-12 contacts_details center_contacts">   
+         <h2>Contact details</h2> 
+
+         <h3> Contact us at: 087 547 7008  info@perfectpizza.co.za</h3> 
+        </div>
+        </div>
+
+    </div>
+      </div> 
+</body>
+</html>
