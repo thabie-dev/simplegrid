@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="simple-grid.css">
 
 <style>
@@ -19,21 +20,21 @@
     justify-content: center;
     align-items: center;
     height: 5em;
-    border: 3px solid darkred;
+   
   }
 
 .pizza {
-    /* box-model */
     padding: 1em;
-    border: 5px solid;
+    border: 1px solid rgb(182, 109, 13);
     margin: 1em;
     border-radius: 1em;
-    width: 12em;
+    width: 15em;
     display: inline-block;
     min-height: 30em;
 }
 .small_pizza {
     background-color: tan;
+    padding-bottom: 2em;
     
    
 }
@@ -41,6 +42,7 @@
 
 .medium_pizza {
     background-color: saddlebrown;
+    padding-bottom: 1em;
     
   
 }
@@ -48,6 +50,7 @@
 
 .large_pizza {
     background-color: sienna;
+    padding-bottom: 1em;
    
     
 }
@@ -98,11 +101,11 @@ body{
           <div class="col-4 small_pizza pizza">
             <h2>Small Pizza</h2>
             <img src="small-pizza.png" width="150">
-            <h3>R129.00</h3>
+            <h3>R49.00</h3>
             <p>Cheese pepperoni onion bacon</p>
           </div>
 
-          <div class="col-4 medium_pizza pizza">
+          <div class="col-3 medium_pizza pizza">
             <h2>Medium Pizza</h2>
             <img src="small-pizza.png" width="150">
             <h3>R89.00</h3>
@@ -115,12 +118,13 @@ body{
             <h3>R129.00</h3>
             <p>Cheese pepperoni onion bacon</p>
         </div>
+        <div>
 
-        <div class="col-12 contacts_details center_contacts">   
-         <h2>Contact details</h2> 
-
-         <h3> Contact us at: 087 547 7008  info@perfectpizza.co.za</h3> 
-        </div>
+           
+            <div class="col-12 contacts_details center_contacts">   
+                <h2>Contact details:</h2> 
+            
+               <h3>087 547 7008  info@perfectpizza.co.za</h3>
         </div>
 
     </div>
